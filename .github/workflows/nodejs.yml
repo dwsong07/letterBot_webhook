@@ -22,7 +22,7 @@ jobs:
             - name: Run the bot
               env:
                   CI: true
-                  WEBHOOKS_URL: ${{ secrets.WEBHOOK_URL}}
+                  WEBHOOK_URL: ${{ secrets.WEBHOOK_URL}}
                   WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
               run: |
                   yarn install
