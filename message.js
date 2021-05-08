@@ -5,7 +5,9 @@ const weather = require("./weather");
 const moon = require("./moon");
 
 module.exports = async () => {
-    const date = new Date().toLocaleDateString();
+    const date = new Date().toLocaleDateString("ko-KR", {
+        timeZone: "Asia/Seoul",
+    });
 
     const message = {
         content: `${date} 편지 왔숑`,
